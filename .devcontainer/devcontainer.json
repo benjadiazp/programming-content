@@ -1,0 +1,4 @@
+{
+  "name": "Programming content",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20"
+}

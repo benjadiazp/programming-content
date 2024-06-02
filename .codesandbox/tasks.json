@@ -1,0 +1,24 @@
+{
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "npm i"
+    }
+  ],
+  "tasks": {
+    "start": {
+      "name": "start",
+      "command": "npm start"
+      //"runAtStart": true
+    },
+    "install": {
+      "name": "install dependencies",
+      "command": "npm i"
+    },
+    "pretty": {
+      "name": "pretty",
+      "command": "npm run pretty",
+      "runAtStart": false
+    }
+  }
+}
