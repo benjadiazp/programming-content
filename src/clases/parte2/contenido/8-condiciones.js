@@ -18,18 +18,18 @@ if (false) {
 }
 
 if (2 == 3) {
-    console.log("Oveja");
+  console.log("Oveja");
 } else {
-    console.log("Cabra");
+  console.log("Cabra");
 }
 
 var vacio; // undefined
 console.log(vacio);
 
 if (!!vacio == false) {
-    console.log("Es verdadero");
+  console.log("Es verdadero");
 } else {
-    console.log("Es falso");
+  console.log("Es falso");
 }
 
 console.log(!vacio); // true
@@ -42,26 +42,25 @@ console.log(2 >= 2); // true
 const edad = 10;
 
 if (edad >= 18) {
-    console.log("Es adulto");
+  console.log("Es adulto");
 } else if (edad >= 13) {
-    console.log("Es adolescente");
+  console.log("Es adolescente");
 } else {
-    console.log("Es niño");
+  console.log("Es niño");
 }
-
 
 // Ejemplo practico
 
 const numero = 15;
 
-console.log(10%4); // mod / modulo
-console.log(10%3);
-function esPar (numero) {
-    if (numero % 2 == 0) {
-        console.log("Es par");
-    } else {
-        console.log("Es impar");
-    }
+console.log(10 % 4); // mod / modulo
+console.log(10 % 3);
+function esPar(numero) {
+  if (numero % 2 == 0) {
+    console.log("Es par");
+  } else {
+    console.log("Es impar");
+  }
 }
 
 esPar(10);
