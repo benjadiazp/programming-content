@@ -1,18 +1,15 @@
 {
-  "name": "animales",
+  "name": "animals",
   "version": "1.0.0",
-  "description": "Es un proyecto para demostrar objetos y clases.",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "tsc && node jsOutput/index.js",
+    "start": "tsc && node out/animal-types.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Benjamin",
   "license": "ISC",
   "devDependencies": {
-    "typescript": "^5.4.5"
-  },
-  "dependencies": {
-    "sharp": "^0.33.4"
+    "typescript": "^5.5.2"
   }
 }
