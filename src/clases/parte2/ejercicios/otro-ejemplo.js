@@ -24,5 +24,30 @@
 */
 
 function fizzBuzz() {
-  /* su código aquí */
+  for (let i = 1; i <= 100; i++)
+    console.log(
+      `${i % 3 === 0 ? "fizz" : ""}${i % 5 === 0 ? "buzz" : ""}` || i,
+    );
 }
+
+//fizzBuzz();
+
+// O(1)
+function superEficiente(n) {
+  console.log(n);
+}
+
+superEficiente(100000000000);
+
+// O(n^3)
+function superIneficiente(n) {
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j < n; j++) {
+      for (let k = 0; k < n; k++) {
+        console.log(i, j, k, n);
+      }
+    }
+  }
+}
+
+superIneficiente(1000);
