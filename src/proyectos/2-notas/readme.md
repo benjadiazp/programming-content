@@ -22,3 +22,15 @@ Ejecuta los siguientes comandos:
   }
 }
 ```
+
+Agregar lo siguiente a package.json:
+
+```json
+"start": "tsc && node out/index.js",
+```
+
+Ejecutar
+
+```bash
+npm start
+```
