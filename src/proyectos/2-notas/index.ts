@@ -1,5 +1,7 @@
 // importamos el módulo "express"
 import express from "express";
+import { Request, Response } from "express";
+import { Note } from "./types";
 
 // Express es un framework para hacer aplicaciones web.
 // inicializamos express y lo guardamos en la constante app
@@ -23,18 +25,25 @@ const app = express();
             - etc
 */
 
-const notas: string[] = [];
+const notes: Note[] = [];
+
+app.use(express.json());
 
 // creamos un endpoint con método GET
-app.get("/", (req, res) => {
-  res.json(notas);
+app.get("/", (req: Request, res: Response) => {
+  res.json(notes);
   res.status(200);
 });
 
 // creamos un endpoint con método POST
-app.post("/", (req, res) => {
-  notas.push("New note");
-  res.json(notas);
+app.post("/", async (req: Request, res: Response) => {
+  const newNote = await req.body?.note;
+  if (!newNote) {
+    res.status(400).send("No se ha enviado la nota");
+    return;
+  }
+  notes.push(newNote);
+  res.json(notes);
   res.status(200);
 });
 
